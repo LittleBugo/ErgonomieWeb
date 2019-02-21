@@ -6,24 +6,27 @@
 <head>
 <meta charset="utf-8" />
 <title>Lapin du Clos Vieuville</title>
+    <link rel="stylesheet" href="css/acceuil.css">
 <script></script>
 </head>
 
 
 <header>
     <div id="banniere">
-    <img src="img/accueil/logos/banniere.jpg"/>
+    <img src="src/img/accueil/logos/banniere.jpg"/>
     </div>
 
 
 <div id="bouttonsOnglets">
-<button type="button" class="onglets" id="accueil" disabled="true"> Accueil </button>
-<button type="button" class="onglets" id="production" onclick="window.location.href ='Accueil.html';"> Production </button>
-<button type="button" class="onglets" id="produits" onclick="window.location.href ='Accueil.html';"> Produits </button>
-<button type="button" class="onglets" id="recettes" onclick="window.location.href ='Accueil.html';"> Recettes </button>
-<button type="button" class="onglets" id="partenaires" onclick="window.location.href ='Accueil.html';"> Partenaires </button>
-<button type="button" class="onglets" id="contact" onclick="window.location.href ='Accueil.html';"> Contact </button>
+    <div class="onglets" id="ongletSelected"> Accueil </div>
+    <a href="Accueil.html"> <div class="onglets" id="propos" > A Propos de nous </div> </a>
+    <a href="onglets/Production.html"> <div class="onglets" id="production" > Production </div> </a>
+    <a href="Accueil.html"> <div class="onglets" id="produits" > Nos Produits </div> </a>
+    <a href="Accueil.html"> <div class="onglets" id="recettes" > Nos Recettes </div> </a>
+    <a href="Accueil.html"> <div class="onglets" id="contact" > Nous Contacter </div> </a>
+    <a href="Accueil.html"> <div class="onglets" id="partenaires" > Nos Partenaires </div> </a>
 </div>
+
 </header>
 
 <body>
