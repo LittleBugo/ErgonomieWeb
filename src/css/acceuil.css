@@ -58,11 +58,11 @@ a
 
 .ongletSelected
 {
-    background-color: darkred;
+    background-color: #90ff07;
 }
 
 .onglets:hover
 {
-    color: yellow;
-    text-size:200px;
+    color: black;
+    /*font-size:200px;*/
 }
