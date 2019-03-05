@@ -60,6 +60,8 @@ a
 #bouttonsOnglets
 {
     text-align: center;
+    background: white;
+
 }
 .onglets
 {
@@ -69,7 +71,6 @@ a
     padding-top: 1%;
     padding-bottom: 1%;
     color:green;
-    background: white;
     font-size: 20px;
     margin-left: 0;
     margin-right: 0;
@@ -95,5 +96,10 @@ a
     text-align: center;
     padding: 3%;
     color: rgba(0, 100, 0, 0.5);
+    margin-top:0%;
+}
 
+.defimer
+{
+    opacity:0.9;
 }
