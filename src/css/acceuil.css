@@ -3,7 +3,8 @@ html
     padding:0%;
     background-image: url("../img/back3.jpg");
     background-repeat: no-repeat;
-    background-size: 100%; 
+    background-size: 2000px;
+    background-attachment:fixed;
 }
 
 
@@ -65,4 +66,16 @@ a
 {
     color: black;
     /*font-size:200px;*/
+}
+
+
+/*Défiler les images des produits*/
+
+#produitsfares
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 3%;
+    color: rgba(0, 100, 0, 0.5);
+
 }
