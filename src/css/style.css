@@ -99,10 +99,33 @@ a
     margin-top:0%;
 }
 
-.defimer
+.defiler
 {
     opacity:0.9;
-    display:none;
+    /*display:none;*/
+}
+
+.ulDefilant{
+     display: table;
+     width:500px;
+     -webkit-animation: slideAnim 20s ease 0s infinite;
+        -moz-animation: slideAnim 20s ease 0s infinite;
+         -ms-animation: slideAnim 20s ease 0s infinite;
+          -o-animation: slideAnim 20s ease 0s infinite;
+             animation: slideAnim 20s ease 0s infinite;
+}
+
+.liDefilant{
+     display: table-cell;
+     width:400px;
+}
+
+@keyframes slideAnim{
+from,25%,to {margin-left:-550px;}
+30%,55%{margin-left:-1100px;}
+60%,85%{margin-left:-1650px;}
+90%,99.99%{margin-left:-2200px;}
+
 }
 
 
