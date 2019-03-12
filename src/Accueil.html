@@ -39,20 +39,32 @@
 <H1 id="produitsfares" class="titres"> Nos Produits dans vos assiettes </H1>
 
 
-<div id="Diapo">
-    <ul class="ulDefilant">
-        <li class="liDefilant"><img class="defiler" src="img/accueil/brochettes.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0660.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0665.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1834.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1873.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1875.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/plateau_aperitif.jpg" width="400px" height="300px"/></li>
-        <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" width="400px" height="300px"/></li>
-    </ul>
-</div>
+    <div id="Diapo">
+        <ul class="ulDefilant">
+            <li class="liDefilant"><img class="defiler" src="img/accueil/brochettes.jpg"/></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg"/></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg"/></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0660.jpg" /></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0665.jpg" /></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1834.jpg" /></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1873.jpg" /></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1875.jpg" /></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/plateau_aperitif.jpg" /></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" /></li>
+        </ul>
+    </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+   $(function(){
+      setInterval(function(){
+         $("#Diapo ul").animate({marginLeft:-500},800,function(){
+            $(this).css({marginLeft:0}).find("liDefilant:last").after($(this).find("liDefilant:first"));
+         })
+      }, 3500);
+   });
+</script>
 
 <H1 class="titres" id="descriptif">A Propos de nous</H1>
 <div id="Marchés">
