@@ -7,9 +7,35 @@
 <meta charset="utf-8" />
 <title>Lapin du Clos Vieuville</title>
     <link rel="stylesheet" href="css/style.css">
-<script></script>
-</head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <script type="text/javascript">
+        $(function(){
+            setInterval(function(){
+                $("#Diapo ul").animate({marginLeft:-500},800,function(){
+                    $(this).css({marginLeft:0}).find("liDefilant:last").after($(this).find("liDefilant:first"));
+                })
+            }, 3500);
+
+            addEventListener("scroll", scrolled, false);
+
+        });
+
+        function scrolled() {
+
+            var windowHeight = document.body.clientHeight,
+                currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+            //alert(currentScroll + " + " +  (header.offsetHeight) + " = ");
+            if (currentScroll >= document.querySelector("#banniere").clientHeight) {
+                $('#bouttonsOnglets').css({'position': 'fixed', 'top': '0', 'width':'100%'});
+            } else {
+                $('#bouttonsOnglets').css({'position': ''});
+            }
+        };
+    </script>
+
+</head>
 
 <header>
 
@@ -21,7 +47,6 @@
     <img id="haut" src="./img/Logo_clos_vieuville.png"/>
     </div>
 
-
 <div id="bouttonsOnglets">
     <a href="#HUAT"><div class="onglets" id="Accueil"> Accueil </div></a>
     <a href="#descriptif"> <div class="onglets" id="propos" > A Propos de nous </div> </a>
@@ -31,8 +56,8 @@
 </div>
 
 </header>
-
 <body>
+
 
 
 
@@ -53,18 +78,6 @@
             <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" /></li>
         </ul>
     </div>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-   $(function(){
-      setInterval(function(){
-         $("#Diapo ul").animate({marginLeft:-500},800,function(){
-            $(this).css({marginLeft:0}).find("liDefilant:last").after($(this).find("liDefilant:first"));
-         })
-      }, 3500);
-   });
-</script>
 
 
 
