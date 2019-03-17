@@ -33,8 +33,8 @@ header
     margin:0%;
     text-align: center;
     position:relative;
-        top: -100px;
-   /*width:100%;
+    top: -50px;
+    /*width:100%;
     background-color: aqua;*/
 }
 
@@ -103,14 +103,27 @@ a
     height:100%;
 }
 
+#nous
+{
+    text-align: center;
+    vertical-align: middle;
+}
 .apropos
 {
     display:inline-block;
     background-color:white;
     margin:0%;
     padding: 2%;
-    width:40%;
-
+    width:50%;
+}
+#vitrine
+{
+    width:35%;
+}
+#producteurs
+{
+    margin:2%;
+    width: 35%;
 }
 
 .apropos H2
@@ -126,6 +139,10 @@ text-align: center;
     font-size:130%;
 }
 
+.apropos p
+{
+    text-align: initial;
+}
 
 #ensavoirplus
 {

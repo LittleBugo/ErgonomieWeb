@@ -19,6 +19,10 @@
 
             addEventListener("scroll", scrolled, false);
 
+            $('#ensavoirplus').click(function()
+            {
+                $('#blabla').css({'display':'block'});
+            });
         });
 
         function scrolled() {
@@ -82,8 +86,8 @@
 
 
 <H1 class="titres" id="descriptif">A Propos de nous</H1>
-<div class="PARTIE">
-<div class="apropos" id="Marchés">
+<div class="PARTIE" id="nous">
+<div class="apropos" id="Marches">
 <H2> Venez nous rencontrer au marcher</H2>
 
     <div>Vitré</div>
@@ -97,7 +101,8 @@
 
     </div>
 
-
+    <img id="producteurs" class="apropos img" src="img/photoProducteurs.jpg" alt="producteurs"/>
+    <img id="vitrine" class="apropos img" src="img/vitrine.jpg" alt="Vitrine"/>
 
 <div class="apropos" id="geographie">
 
