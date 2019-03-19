@@ -115,14 +115,21 @@ a
     padding: 2%;
     width:50%;
 }
+
+#Marches
+{
+    top:15%;
+}
 #vitrine
 {
-    width:35%;
+    width: 50%;
+    bottom:10px;
 }
 #producteurs
 {
     margin:2%;
     width: 35%;
+    float: right;
 }
 
 .apropos H2
@@ -196,7 +203,7 @@ display:none;
 
 .defiler
 {
-    opacity:0.9;
+    opacity:1;
     width: 100%;
     height: 300px;
     /*display:none;*/

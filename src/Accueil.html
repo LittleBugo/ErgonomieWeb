@@ -33,7 +33,11 @@
 
             //alert(currentScroll + " + " +  (header.offsetHeight) + " = ");
             if (currentScroll >= document.querySelector("#banniere").clientHeight+100) {
-                $('#bouttonsOnglets').css({'position': 'fixed', 'top': '0', 'width':'100%', 'background-color':'rgba(0, 100, 0, 0.7)'});
+
+                for(var i=256; i>120; i--)
+                {
+                    $('#bouttonsOnglets').css({'position': 'fixed', 'top': '0', 'width':'100%', 'background-color':'rgba(0,'+ i+ ', 0, 0.7)'});
+                }
                 $('.onglets').css({'color':'white'});
             } else {
                 $('#bouttonsOnglets').css({'position': '', 'background-color':'white'});
@@ -147,7 +151,7 @@ Au printemps 2001, nous avons évolué vers un service supplémentaire de notre 
                     </ul>
                     Conduite : La reproduction se fait en bandes tous les 15 jours, permettant ainsi une régularité d'approvisionnement.
                     Après 30 jours de gestation, les lapereaux passent 5 semaines avec la mère, pour aller ensuite en engraissement.
-                    </p>
+                </p>
         <h4>Engraissement</h4>
             <p>Les lapins sevrés sont rationnés jusqu’à 55 jours d’âge. Ensuite on utilise un aliment finition jusqu’à 90-100 jours.
             Au départ, ils sont disposés par 2, pour optimiser le processus de rationnement. Nous les finissons un par un, de façon à homogénéiser le lot avant la vente.
