@@ -1,7 +1,7 @@
 html
 {
     padding:0%;
-    background-image: url("../img/back3.jpg");
+    background-image:linear-gradient(white, green);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:fixed;
@@ -172,14 +172,7 @@ display:none;
 
 /*Défiler les images des produits*/
 
-.titres
-{
-    background-color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    padding: 3%;
-    color: rgba(0, 100, 0, 0.5);
-    margin: 0%;
-}
+
 
 #Diapo {
     height: 300px;
@@ -213,7 +206,15 @@ display:none;
 
 
 
+.titres
+{
 
+    background-color: rgba(46,139,87,0.3);
+    text-align: center;
+    padding: 3%;
+    color: rgba(255,255,255,0.7);
+    margin: 0%;
+}
 
 
 
@@ -249,4 +250,15 @@ display:none;
 .contenuRecette
 {
     display:none;
+}
+
+footer {
+
+    background-color: rgba(0,0,0,0.8);
+    color : white;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+
 }
