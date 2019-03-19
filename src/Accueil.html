@@ -21,7 +21,8 @@
 
             $('#ensavoirplus').click(function()
             {
-                $('#blabla').css({'display':'block'});
+                //$('#blabla').css({'display':'block'});
+                alert('fonctionnalité indisponible pour le moment');
             });
         });
 
@@ -31,10 +32,13 @@
                 currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
             //alert(currentScroll + " + " +  (header.offsetHeight) + " = ");
-            if (currentScroll >= document.querySelector("#banniere").clientHeight) {
-                $('#bouttonsOnglets').css({'position': 'fixed', 'top': '0', 'width':'100%'});
+            if (currentScroll >= document.querySelector("#banniere").clientHeight+100) {
+                $('#bouttonsOnglets').css({'position': 'fixed', 'top': '0', 'width':'100%', 'background-color':'rgba(0, 100, 0, 0.7)'});
+                $('.onglets').css({'color':'white'});
             } else {
-                $('#bouttonsOnglets').css({'position': ''});
+                $('#bouttonsOnglets').css({'position': '', 'background-color':'white'});
+                $('.onglets').css({'color':'green'});
+
             }
         };
     </script>
@@ -69,7 +73,7 @@
 
 
     <div id="Diapo">
-        <ul class="ulDefilant">
+        <ul id="imagesDefilante" class="ulDefilant">
             <li class="liDefilant"><img class="defiler" src="img/accueil/brochettes.jpg" alt="représentation des brochettes"/></li>
             <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg" alt="Crépinette Crue"/></li>
             <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg" alt="Crépinette cuite"/></li>
@@ -112,83 +116,86 @@
 Au printemps 2001, nous avons évolué vers un service supplémentaire de notre activité de production, à savoir la commercialisation, via la transformation. </p>
 </div>
 
-<div id="ensavoirplus">+ En savoir plus sur nos façon de faire +</div>
+<button id="ensavoirplus">+ En savoir plus sur nos façon de faire +</button>
 
-<div class="apropos" id="blabla">
+    <div class="apropos" id="blabla">
 
-    <img src="img/production/cultures.jpg" alt="culture"/>
-    <img src="img/production/laboratoire_1.jpg" alt="Représentation de l'abatoire"/>
     <img src="img/production/lapins_1.jpg" alt="image de lapin"/>
-    <img src="img/production/maternite.jpg" alt="Lapin dans la matérnité"/>
-<p> Le lapin est une viande qui allie plaisir et santé. C'est une viande peu calorique, riche en protéines,regorgeant de vitamines notamment les vitamines B3 et B12, et en "bon" lipides permettant d'augmenter l'apport d'oméga 3. Redécouvrez une viande savoureuse, tendre et très digeste.
+
+    <p>     Le lapin est une viande qui allie plaisir et santé. C'est une viande peu calorique, riche en protéines,regorgeant de vitamines notamment les vitamines B3 et B12, et en "bon" lipides permettant d'augmenter l'apport d'oméga 3. Redécouvrez une viande savoureuse, tendre et très digeste.
     Des idées recettes sont à votre disposition, c'est facile et à toute saison.
 
     Pour les professionnels, nous assurons les livraisons sur un rayon de 50 km.
     Nous expédions sur la région parisienne et la France entière.
     Diverses prestations sont possibles (abattage à façon, etc...). </p>
 
-<H2>Espace élevage</H2>
+    <H2>Espace élevage</H2>
 
-<h3>Les différentes étapes de l’élevage</h3>
-<p>Les bâtiments et le plan d'épandage nous permettent d'être aux normes dans le cadre du Programme de Maîtrise des Pollutions d'Origines Animales.
-    L'environnement est pris en compte dans notre réflexion sur la conduite de l'exploitation, que ce soit pour l'élevage ou les cultures.</p>
-<h4>Maternité</h4>
-<p>
-    Génétique : Nous travaillons avec la souche Hyla, cela nous permet d'obtenir un lapin avec une bonne conformation.
-    La reproduction se fait par insémination artificielle pour 2 raisons majeures :
-<ul><li>une organisation de travail optimisée</li>
-    <li>- le maintien d'un haut potentiel du cheptel</li>
-</ul>
-Conduite : La reproduction se fait en bandes tous les 15 jours, permettant ainsi une régularité d'approvisionnement.
-Après 30 jours de gestation, les lapereaux passent 5 semaines avec la mère, pour aller ensuite en engraissement.
-</p>
-<h4>Engraissement</h4>
-<p>Les lapins sevrés sont rationnés jusqu’à 55 jours d’âge. Ensuite on utilise un aliment finition jusqu’à 90-100 jours.
-    Au départ, ils sont disposés par 2, pour optimiser le processus de rationnement. Nous les finissons un par un, de façon à homogénéiser le lot avant la vente.
-    Le lapin idéal pour l’abattage atteint 2,7 kg environ. Chaque lapin est trié manuellement à partir de 90 jours, ceci nous permet d’obtenir une carcasse pesant 1,5 kg minimum.. </p>
+        <h3>Les différentes étapes de l’élevage</h3>
+        <p>Les bâtiments et le plan d'épandage nous permettent d'être aux normes dans le cadre du Programme de Maîtrise des Pollutions d'Origines Animales.
+            L'environnement est pris en compte dans notre réflexion sur la conduite de l'exploitation, que ce soit pour l'élevage ou les cultures.</p>
+        <img src="img/production/laboratoire_1.jpg" alt="Représentation de l'abatoire"/>
+        <img src="img/production/maternite.jpg" alt="Lapin dans la matérnité"/>
 
-<h4>Une alimentation très technique</h4>
-<p>Nous travaillons avec des fabricants qui ont un savoir faire spécifique à la production cunicole
-    La nourriture est sous forme de granulés . ( ils sont garantis sans OGM et sans farines animales)..
-    Ceux-ci sont composés à 100% de végétaux, minéraux et vitamines.
-    Les ingrédients principaux sont la luzerne, tournesol, betterave et céréales.
-    Tous les ingrédients sont sélectionnés suivant des critères très stricts, de façon à fournir une régularité dans la fabrication. Le lapin ayant une double digestion, la qualité des matières premières est déterminante durant la vie du lapin.
-    Les besoins du lapin évoluent tout au long de sa croissance.
-    Nous devons fournir ce qu’il faut au bon moment, de façon à optimiser cette croissance.
-    C’est pour cela que l’on peut observer des variations dans les proportions de chaque composant du granulé.
-    Nous accordons une grande importance à la proportion en luzerne. C’est un composant essentiel pour un bon fonctionnement du système digestif.
-    De plus la luzerne est riche en acides gras poly-insaturés oméga 3 et oméga 6, éléments bénéfiques pour la santé humaine.</p>
 
-</div>
+            <h4>Maternité</h4>
+                <p>
+                    Génétique : Nous travaillons avec la souche Hyla, cela nous permet d'obtenir un lapin avec une bonne conformation.
+                    La reproduction se fait par insémination artificielle pour 2 raisons majeures :
+                    <ul><li>une organisation de travail optimisée</li>
+                        <li>- le maintien d'un haut potentiel du cheptel</li>
+                    </ul>
+                    Conduite : La reproduction se fait en bandes tous les 15 jours, permettant ainsi une régularité d'approvisionnement.
+                    Après 30 jours de gestation, les lapereaux passent 5 semaines avec la mère, pour aller ensuite en engraissement.
+                    </p>
+        <h4>Engraissement</h4>
+            <p>Les lapins sevrés sont rationnés jusqu’à 55 jours d’âge. Ensuite on utilise un aliment finition jusqu’à 90-100 jours.
+            Au départ, ils sont disposés par 2, pour optimiser le processus de rationnement. Nous les finissons un par un, de façon à homogénéiser le lot avant la vente.
+            Le lapin idéal pour l’abattage atteint 2,7 kg environ. Chaque lapin est trié manuellement à partir de 90 jours, ceci nous permet d’obtenir une carcasse pesant 1,5 kg minimum.. </p>
+
+        <h4>Une alimentation très technique</h4>
+            <img src="img/production/cultures.jpg" alt="culture"/>
+            <p>Nous travaillons avec des fabricants qui ont un savoir faire spécifique à la production cunicole
+                La nourriture est sous forme de granulés . ( ils sont garantis sans OGM et sans farines animales)..
+                Ceux-ci sont composés à 100% de végétaux, minéraux et vitamines.
+                Les ingrédients principaux sont la luzerne, tournesol, betterave et céréales.
+                Tous les ingrédients sont sélectionnés suivant des critères très stricts, de façon à fournir une régularité dans la fabrication. Le lapin ayant une double digestion, la qualité des matières premières est déterminante durant la vie du lapin.
+                Les besoins du lapin évoluent tout au long de sa croissance.
+                Nous devons fournir ce qu’il faut au bon moment, de façon à optimiser cette croissance.
+                C’est pour cela que l’on peut observer des variations dans les proportions de chaque composant du granulé.
+                Nous accordons une grande importance à la proportion en luzerne. C’est un composant essentiel pour un bon fonctionnement du système digestif.
+                De plus la luzerne est riche en acides gras poly-insaturés oméga 3 et oméga 6, éléments bénéfiques pour la santé humaine.</p>
+
+    </div>
 </div>
 
 
 <H1 class="titres" id="production">Nos Produits</H1>
 <div class="PARTIE">
-<div id="produisContenu">
-<img src="img/produits/brochettes_de_lapin.jpg" alt="brochettes de lapin"/>
-<img src="img/produits/Cotes.png" alt="Côtes de Lapin"/>
-<img src="img/produits/Cuisse_desossee.png" alt="Cuisse désossée de lapin"/>
-<img src="img/produits/Cuisses.png" alt="Cuisses de lapin"/>
-<img src="img/produits/filets.png" alt="Filet de lapin"/>
-<img src="img/produits/Gigolettes.png" alt="Gigolette de lapin"/>
-<img src="img/produits/lapin_de_pierre.jpg" alt="Statue de lapin"/>
-<img src="img/produits/Lapin_entier.png" alt="Lapin Entier "/>
-<img src="img/produits/Lapin_fines_herbes.png" alt="Bocal de repas pré-préparé : Lapin aux fines herbes"/>
-<img src="img/produits/lapin_gibelotte.png" alt="Bocal de repas pré-préparé : Gibelotte de Lapin"/>
-<img src="img/produits/petits_pates.png" alt="Pâté de Lapin"/>
-<img src="img/produits/Plats_de_rillettes.png" alt="Rilettes de Lapin"/>
-<!--<img src="img/produits/Preparation.jpg"/>-->
-<img src="img/produits/Rable.png" alt="Rable de Lapin"/>
-<img src="img/produits/rable_desosse.png" alt="Rable désossé de Lapin"/>
-<img src="img/produits/Rillette.png" alt="Pot de Rillette de Lapin"/>
-<img src="img/produits/Roti.png" alt="Roti de Lapin"/>
-</div>
+    <div id="produisContenu">
+        <img src="img/produits/brochettes_de_lapin.jpg" alt="brochettes de lapin"/>
+        <img src="img/produits/Cotes.png" alt="Côtes de Lapin"/>
+        <img src="img/produits/Cuisse_desossee.png" alt="Cuisse désossée de lapin"/>
+        <img src="img/produits/Cuisses.png" alt="Cuisses de lapin"/>
+        <img src="img/produits/filets.png" alt="Filet de lapin"/>
+        <img src="img/produits/Gigolettes.png" alt="Gigolette de lapin"/>
+        <img src="img/produits/lapin_de_pierre.jpg" alt="Statue de lapin"/>
+        <img src="img/produits/Lapin_entier.png" alt="Lapin Entier "/>
+        <img src="img/produits/Lapin_fines_herbes.png" alt="Bocal de repas pré-préparé : Lapin aux fines herbes"/>
+        <img src="img/produits/lapin_gibelotte.png" alt="Bocal de repas pré-préparé : Gibelotte de Lapin"/>
+        <img src="img/produits/petits_pates.png" alt="Pâté de Lapin"/>
+        <img src="img/produits/Plats_de_rillettes.png" alt="Rilettes de Lapin"/>
+        <!--<img src="img/produits/Preparation.jpg"/>-->
+        <img src="img/produits/Rable.png" alt="Rable de Lapin"/>
+        <img src="img/produits/rable_desosse.png" alt="Rable désossé de Lapin"/>
+        <img src="img/produits/Rillette.png" alt="Pot de Rillette de Lapin"/>
+        <img src="img/produits/Roti.png" alt="Roti de Lapin"/>
+    </div>
 
 </div>
 <H1 class="titres" id="recette">Nos idées de Recettes et Conseils de Cuisson</H1>
     <div class="PART">
-<div id="recettesContenus">
+    <div id="recettesContenus">
 
     <div class="titreRecette">
     <h2>Marinade Lavande, au thym, au miel et au citron</h2>
