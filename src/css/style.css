@@ -1,7 +1,7 @@
 html
 {
     padding:0%;
-    background-image:linear-gradient(white, green);
+    background-image:linear-gradient(rgb(255,255,255), rgb(255, 242, 113));
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:fixed;
@@ -257,8 +257,8 @@ footer {
     background-color: rgba(0,0,0,0.8);
     color : white;
     margin: 0;
-    height: 100%;
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
