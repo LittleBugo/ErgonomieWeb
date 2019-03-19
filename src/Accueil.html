@@ -44,28 +44,61 @@
                 $('.onglets').css({'color':'green'});
 
             }
+
         };
+
+        function scrollToReference() {
+                var element = document.getElementById('#contacts');
+
+                alert('bouh ' + element.scrollTop + ' ' + document.documentElement.scrollTop );
+
+
+                document.documentElement.scrollTop = element.scrollTop;
+
+                /*if(element.scrollTop < currentScroll)
+                {
+                    for(var i=document.documentElement.scrollTop; i>= element.scrollTop; i--)
+                    {
+                        document.documentElement.scrollTop = i;
+                    }
+                    alert('bouh ' + element.scrollTop + ' ' + document.documentElement.scrollTop );
+
+                }
+                else
+                {
+                    for(var i=document.documentElement.scrollTop; i<= element.scrollTop; i++)
+                    {
+                        document.documentElement.scrollTop = i;
+                    }
+                    alert('yolo ' + element.scrollTop + ' ' + document.documentElement.scrollTop );
+
+                }*/
+
+
+         };
+
+
     </script>
 
 </head>
 
 <header>
-
-    <div id="fb">
-       <a href="https://fr-fr.facebook.com/lapinduclosvieuville/"><img id="fb_logo" src="./img/logoFBrond.png" alt="facebookLogo"/></a>
-    </div>
-
+    <a href="https://fr-fr.facebook.com/lapinduclosvieuville/">
+        <div id="fb">
+            <img id="fb_logo" src="./img/logoFBrond.png" alt="facebookLogo"/>
+        </div>
+    </a>
     <div id="banniere">
-    <img id="haut" src="./img/Logo_clos_vieuville.png"/>
+        <img id="haut" src="./img/Logo_clos_vieuville.png"/>
     </div>
 
-<div id="bouttonsOnglets">
-    <a href="#HUAT"><div class="onglets" id="Accueil"> Accueil </div></a>
-    <a href="#descriptif"> <div class="onglets" id="propos" > A Propos de nous </div> </a>
-    <a href="#production"> <div class="onglets" id="prod" > Nos Produits </div> </a>
-    <a href="#recette"> <div class="onglets" id="recettes" > Nos Recettes et Conseils</div> </a>
-    <a href="#contacts"> <div class="onglets" id="contact" > Nous Contacter </div> </a>
-</div>
+    <div id="bouttonsOnglets">
+        <a href="#HUAT"><div class="onglets" id="Accueil"> Accueil </div></a>
+        <a href="javascript:scrollToReference()"> <div class="onglets" id="propos" > A Propos de nous </div> </a>
+        <a href="#production"> <div class="onglets" id="prod" > Nos Produits </div> </a>
+        <a href="#recette"> <div class="onglets" id="recettes" > Nos Recettes et Conseils</div> </a>
+        <a href="#contacts"> <div class="onglets" id="contact" > Nous Contacter </div> </a>
+    </div>
 
 </header>
 <body>
@@ -76,51 +109,59 @@
 <H1 id="produitsfares" class="titres"> Nos Produits dans vos assiettes </H1>
 
 
-    <div id="Diapo">
-        <ul id="imagesDefilante" class="ulDefilant">
-            <li class="liDefilant"><img class="defiler" src="img/accueil/brochettes.jpg" alt="représentation des brochettes"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg" alt="Crépinette Crue"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg" alt="Crépinette cuite"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0660.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0665.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1834.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1873.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1875.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/plateau_aperitif.jpg" alt="rillettes"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" alt="saussice seche (saucisson)"/></li>
-        </ul>
-    </div>
+<div id="Diapo">
+    <ul id="imagesDefilante" class="ulDefilant">
+        <li class="liDefilant"><img class="defiler" src="img/accueil/brochettes.jpg" alt="représentation des brochettes"/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg" alt="Crépinette Crue"/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg" alt="Crépinette cuite"/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0660.jpg" alt=""/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0665.jpg" alt=""/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1834.jpg" alt=""/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1873.jpg" alt=""/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1875.jpg" alt=""/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/plateau_aperitif.jpg" alt="rillettes"/></li>
+        <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" alt="saussice seche (saucisson)"/></li>
+    </ul>
+</div>
 
 
 
 <H1 class="titres" id="descriptif">A Propos de nous</H1>
 <div class="PARTIE" id="nous">
-<div class="apropos" id="Marches">
-<H2> Venez nous rencontrer au marcher</H2>
 
-    <div>Vitré</div>
+    <div class="aproposblocks">
+        <img id="producteurs" class="apropos img" src="img/photoProducteurs.jpg" alt="producteurs"/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="apropos" id="geographie">
 
-        <p>Le samedis matin, Place de la République de 8h30 à 12h30
-            les Jeudis de l'été, place de la Gare, en juillet août .</p>
+            <h2>La ferme du Clos Vieuville est située  aux Portes de la Bretagne</h2>
+            <p class="text">    A deux pas du château de Mme de Sévigné, près de Vitré, à 4 km de l'autoroute.
+                Notre exploitation agricole s’est développée dans l’élevage de lapins depuis 1975.
+                Au printemps 2001, nous avons évolué vers un service supplémentaire de notre activité de production, à savoir la commercialisation, via la transformation. </p>
+        </div>
 
-    <div>Fougères</div>
-
-    <p>Le samedi matin de 8h00 à 12h30. Rue National, sur la place Jean Guéhenno, au pied du Beffroy, stand au bout des arcades.</p>
 
     </div>
+    <div  class="aproposblocks">
+        <img id="vitrine" class="apropos img" src="img/vitrine.jpg" alt="Vitrine"/>
 
-    <img id="producteurs" class="apropos img" src="img/photoProducteurs.jpg" alt="producteurs"/>
-    <img id="vitrine" class="apropos img" src="img/vitrine.jpg" alt="Vitrine"/>
+        <div class="apropos" id="Marches">
+            <H2> Venez nous rencontrer au marcher</H2>
 
-<div class="apropos" id="geographie">
+            <div>Vitré</div>
 
-    <h2>La ferme du Clos Vieuville est située  aux Portes de la Bretagne</h2>
-    <p class="text">    A deux pas du château de Mme de Sévigné, près de Vitré, à 4 km de l'autoroute.
-        Notre exploitation agricole s’est développée dans l’élevage de lapins depuis 1975.
-Au printemps 2001, nous avons évolué vers un service supplémentaire de notre activité de production, à savoir la commercialisation, via la transformation. </p>
-</div>
+            <p>Le samedis matin, Place de la République de 8h30 à 12h30
+                les Jeudis de l'été, place de la Gare, en juillet août .</p>
 
-<button id="ensavoirplus">+ En savoir plus sur nos façon de faire +</button>
+            <div>Fougères</div>
+
+            <p>Le samedi matin de 8h00 à 12h30. Rue National, sur la place Jean Guéhenno, au pied du Beffroy, stand au bout des arcades.</p>
+
+        </div>
+
+    </div>
+    <button id="ensavoirplus">+ En savoir plus sur nos façon de faire +</button>
+
 
     <div class="apropos" id="blabla">
 

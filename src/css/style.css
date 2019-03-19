@@ -118,19 +118,26 @@ a
 
 #Marches
 {
-    top:15%;
+    vertical-align:center;
 }
 #vitrine
 {
-    width: 50%;
+    width: 40%;
     bottom:10px;
+    float:left;
 }
 #producteurs
 {
     margin:2%;
     width: 35%;
-    float: right;
+    float:right;
 }
+
+.aproposblocks
+{
+    display:block;
+}
+
 
 .apropos H2
 {
