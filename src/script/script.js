@@ -6,19 +6,61 @@ $(function(){
   }, 3500);
 */
 
-  var i=11;
-  $('#Diapo .ulDefilant li:nth-child('+i+')').css({'display':'block'});
-
-
-
+  //Ici c'est pour le scroll et pour que le menu s'accroche en haut.
   addEventListener("scroll", scrolled, false);
+
+
+
+  //Ajouter des Alinéas sur les paragraphes.
   $('p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
+
+  //Gérer le boutons en savoir plus de la partie "à propos de nous".
   $('#ensavoirplus').click(function()
   {
     //$('#blabla').css({'display':'block'});
     alert('fonctionnalité indisponible pour le moment');
   });
+
+
+  /**
+   * Script concernant la liste des produits
+   *
+   */
+
+  var i=1;
+  var nbProduits=$('#imagesDefilante li').length;
+  //alert($('#imagesDefilante li').length);
+  $('#Diapo .ulDefilant li:nth-child('+i+')').css({'display':'inline-block'});
+  $('#flechedroite').click(function()
+  {
+    i=(i+1)%nbProduits;
+    if(i<=0)
+    {
+      i=1;
+    }
+    $('#Diapo .ulDefilant li').css({'display':'none'});
+    $('#Diapo .ulDefilant li:nth-child('+(i+1)+')').css({'display':'inline-block'});
+    return i;
+  });
+  $('#flechegauche').click(function()
+  {
+    i=(i-1);
+    if(i<=0)
+    {
+      i=nbProduits;
+    }
+    $('#Diapo .ulDefilant li').css({'display':'none'});
+    $('#Diapo .ulDefilant li:nth-child('+(i)+')').css({'display':'inline-block'});
+  });
+
 });
+
+
+
+
+
+
+
 
 function scrolled() {
 
@@ -26,16 +68,13 @@ function scrolled() {
   currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
   //alert(currentScroll + " + " +  (header.offsetHeight) + " = ");
-  if (currentScroll >=
-    document.getElementById("descriptif").offsetTop - document.getElementById("bouttonsOnglets").clientHeight)
+  if (currentScroll >= document.getElementById("bouttonsOnglets").offsetTop)
   {
-    $('#bouttonsOnglets').css({'position': 'fixed', 'top': '0', 'width':'100%', 'background-color':'rgba(255, 255, 255, 1)'});
+    $('#bouttonsOngletsAccrochés').css({'display':'block'})
     //window.scrollTo(0, document.getElementById("descriptif").offsetTop);
     //$('.onglets').css({'color':'white'});
   } else {
-                $('#bouttonsOnglets').css({'position': '', 'background-color':'white'});
-                $('.onglets').css({'color':'green'});
-
+    $('#bouttonsOngletsAccrochés').css({'display':'none'})
   }
 
 };

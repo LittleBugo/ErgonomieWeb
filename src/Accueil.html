@@ -35,6 +35,14 @@
         <a href="javascript:scrollToReference('contacts')"> <div class="onglets" id="contact" > Nous Contacter </div> </a>
     </div>
 
+    <div id="bouttonsOngletsAccrochés">
+        <a href="javascript:scrollToReference('HUAT')"><div class="onglets" id="Accueil2"> Accueil </div></a>
+        <a href="javascript:scrollToReference('descriptif')"> <div class="onglets" id="propos2" > A Propos de nous </div> </a>
+        <a href="javascript:scrollToReference('production')"> <div class="onglets" id="prod2" > Nos Produits </div> </a>
+        <a href="javascript:scrollToReference('recette')"> <div class="onglets" id="recettes2" > Nos Recettes et Conseils</div> </a>
+        <a href="javascript:scrollToReference('contacts')"> <div class="onglets" id="contact2" > Nous Contacter </div> </a>
+    </div>
+
 </header>
 <body>
 
@@ -86,7 +94,6 @@
         </div>
 
     </div>
-    <button id="ensavoirplus">+ En savoir plus sur nos façon de faire +</button>
 
 
     <div class="apropos" id="blabla">
@@ -131,6 +138,9 @@
                 De plus la luzerne est riche en acides gras poly-insaturés oméga 3 et oméga 6, éléments bénéfiques pour la santé humaine.</p>
 
     </div>
+
+    <button id="ensavoirplus">+ En savoir plus sur nos façon de faire +</button>
+
 </div>
 
 
@@ -138,27 +148,77 @@
 <div class="PARTIE">
 
     <div id="Diapo">
+        <img class='fleche' id="flechegauche" src="img/produits/tempoGauche.png" alt="Vers la gauche"/>
         <ul id="imagesDefilante" class="ulDefilant">
             <li class="liDefilant">
-                    <img class="defiler" src="img/accueil/brochettes.jpg" alt="représentation des brochettes"/>
-                    <h2>Brochettes de Lapin</h2>
-                    <p>Description des bochettes.</p>
+                <img class="defiler" src="img/accueil/brochettes.jpg" alt="représentation des brochettes"/>
+                <div>
+                        <h2>Brochettes de Lapin</h2>
+                        <span>Description des bochettes.</span>
+                </div>
+
                 </li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg" alt="Crépinette Crue"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg" alt="Crépinette cuite"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0660.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0665.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1834.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1873.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1875.jpg" alt=""/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/plateau_aperitif.jpg" alt="rillettes"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" alt="saussice seche (saucisson)"/></li>
-            <li class="liDefilant"><img class="defiler" src="img/produits/Lapin_entier.png" alt="Lapin Entier"/>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_crue.jpg" alt="Crépinette Crue"/>
+                <div>
+                    <h2>Crépinette Crue</h2>
+                    <span>Steack de lapin garnis de tomate séchée et poivrons recouvert de crépine de porc.</span>
+                </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/crepinette_cuite.jpg" alt="Crépinette cuite"/>
+                <div>
+                    <h2>Crépinette Cuite</h2>
+                    <span>Steack de lapin garnis de tomate séchée et poivrons recouvert de crépine de porc.</span>
+                </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0660.jpg" alt=""/>
+                 <div>
+                    <h2>EUH, des brochettes ?</h2>
+                    <span>Je n'ai plus le nom, faut que je le retrouve.</span>
+                </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_0665.jpg" alt=""/>
+            <div>
+                <h2>Saucisses de lapin crues</h2>
+                <span>Moins grasse que les saussices de porcs</span>
+            </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1834.jpg" alt=""/>
+                <div>
+                    <h2>EUH, des rotis ?</h2>
+                    <span>Je n'ai plus le nom, faut que je le retrouve.</span>
+                </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1873.jpg" alt=""/>
+                <div>
+                    <h2>Rotis de lapin</h2>
+                    <span>Viande de lapin entourée de lard fumé et de quelques verdures comme de la carotte et ciboulette </span>
+                </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/IMG_1875.jpg" alt=""/>
+                <div>
+                    <h2>Des montages de mini-rotis</h2>
+                    <span>Je n'ai plus le nom, faut que je le retrouve.</span>
+                </div></li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/plateau_aperitif.jpg" alt="rillettes"/>
+                <div>
+                    <h2>Plateau Apéritif</h2>
+                    <span>Pâté, rillette ou encore sausisson ? Le lapin vous offre un appéritif garantis</span>
+                </div>
+            </li>
+            <li class="liDefilant"><img class="defiler" src="img/accueil/Saucisse_seche.jpg" alt="saussice seche (saucisson)"/>
+                <div>
+                    <h2>Saussisson de Lapin</h2>
+                    <span>Aussi appelée saussice sèche, son goût vous surprendra</span>
+                </div>
+            </li>
+            <!--<li class="liDefilant"><img class="defiler" src="img/produits/Lapin_entier.png" alt="Lapin Entier"/>
+
                 <h2>Lapin Entier</h2>
                 <p>Description du lapin</p>
-            </li>
+            </li>-->
 
         </ul>
+        <img class='fleche' id="flechedroite" src="img/produits/tempoDroite.png" alt="Vers la droite"/>
     </div>
 
     <!--
