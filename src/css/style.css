@@ -125,6 +125,8 @@ a
     height:100%;
     overflow: hidden;
     background-color: white;
+    text-align: center;
+
 }
 
 #nous
@@ -198,7 +200,7 @@ text-align: center;
     padding:1%;
 }
 
-#ensavoirplus
+.ensavoirplus
 {
     text-align:center;
     color : rgba(0, 100, 0, 0.7);
@@ -301,11 +303,12 @@ display:none;
 
 .titreRecette
 {
-    width:30%;
+    width:25%;
     margin: 1%;
     display:inline-block;
     text-align:center;
-
+    background-color: #ffffdd;
+    padding:1%;
 }
 
 .titreRecette h2
@@ -313,7 +316,7 @@ display:none;
     text-align:center;
     padding:1%;
     font-size:90%;
-    background-color:rgba(255, 255, 255, 1);
+    background-color:#ffffff;
     color: rgba(0, 100, 0, 0.7);
 }
 
@@ -321,7 +324,20 @@ display:none;
 .contenuRecette
 {
     display:none;
+    text-align: justify;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
 

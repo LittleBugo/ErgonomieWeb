@@ -15,7 +15,7 @@ $(function(){
   $('p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
 
   //Gérer le boutons en savoir plus de la partie "à propos de nous".
-  $('#ensavoirplus').click(function()
+  $('.ensavoirplus').click(function()
   {
     //$('#blabla').css({'display':'block'});
     alert('fonctionnalité indisponible pour le moment');
@@ -39,9 +39,9 @@ $(function(){
       i=1;
     }
     $('#Diapo .ulDefilant li').css({'display':'none'});
-    $('#Diapo .ulDefilant li:nth-child('+(i+1)+')').css({'display':'inline-block'});
-    return i;
+    $('#Diapo .ulDefilant li:nth-child('+(i)+')').css({'display':'inline-block'});
   });
+
   $('#flechegauche').click(function()
   {
     i=(i-1);
@@ -53,6 +53,14 @@ $(function(){
     $('#Diapo .ulDefilant li:nth-child('+(i)+')').css({'display':'inline-block'});
   });
 
+
+
+/*RECETTES*/
+
+	$('.titreRecette').click(function()
+	{
+		$(".contenuRecette").css({'display':'inline-block'});
+	})
 });
 
 
@@ -77,7 +85,7 @@ function scrolled() {
     $('#bouttonsOngletsAccrochés').css({'display':'none'})
   }
 
-  if(currentScroll>document.getElementById("descriptif").offsetTop && currentScroll<document.getElementById("production").offsetTop)
+  if(currentScroll<document.getElementById("production").offsetTop)
   {
   	//$('html').css({'background-color':'blue'});
   	document.getElementById("propos2").className ="onglets selected";
