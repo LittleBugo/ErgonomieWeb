@@ -104,16 +104,19 @@ function scrolled() {
   	else
   	{
   		document.getElementById("prod2").className ="onglets";
-		if(currentScroll>document.getElementById("recette").offsetTop && currentScroll<windowHeight)
+		if(currentScroll>document.getElementById("recette").offsetTop)
 		{
   			document.getElementById("recettes2").className ="onglets selected";
-  			//alert(windowHeight + " "  + currentScroll);
-		}
+  			document.getElementById("contact2").className ="onglets";
 
-		else
-		{
-  			document.getElementById("recettes2").className ="onglets";
-  			document.getElementById("contact2").className ="onglets selected";
+  			//alert(window.innerHeight + " "  + currentScroll  + " et " + document.getElementById("fb").offsetTop);
+		}
+	//console.log("currentScroll " + currentScroll + " taille window "  + windowHeight + "le tout" )
+	if(currentScroll+window.innerHeight>=windowHeight)
+	{
+		document.getElementById("recettes2").className ="onglets";
+  		document.getElementById("contact2").className ="onglets selected";
+
 		}
   	}
   }

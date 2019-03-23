@@ -35,7 +35,7 @@ header
     margin:0%;
     text-align: center;
     position:relative;
-    top: -50px;
+    top: 10px;
     /*width:100%;
     background-color: aqua;*/
 }
@@ -43,10 +43,10 @@ header
 #fb_logo {
     width : 5%;
     height: 5%;
-    -webkit-filter: drop-shadow(-5px 5px 5px black);
+    /*-webkit-filter: drop-shadow(-5px 5px 5px black);
      filter: drop-shadow(-5px -2px 5px black);
      margin-left:0px;
-     margin-top: 0px;
+     margin-top: 0px;*/
 }
 
 #haut
