@@ -98,7 +98,7 @@ function scrolled() {
   	if(currentScroll>document.getElementById("production").offsetTop && currentScroll<document.getElementById("recette").offsetTop)
   	{
   		document.getElementById("prod2").className ="onglets selected";
-  		document.getElementById("recette2").className ="onglets";
+  		document.getElementById("recettes2").className ="onglets";
 
   	}
   	else
@@ -106,12 +106,13 @@ function scrolled() {
   		document.getElementById("prod2").className ="onglets";
 		if(currentScroll>document.getElementById("recette").offsetTop && currentScroll<windowHeight)
 		{
-  			document.getElementById("recette2").className ="onglets selected";
+  			document.getElementById("recettes2").className ="onglets selected";
+  			//alert(windowHeight + " "  + currentScroll);
 		}
 
 		else
 		{
-  			document.getElementById("recette2").className ="onglets";
+  			document.getElementById("recettes2").className ="onglets";
   			document.getElementById("contact2").className ="onglets selected";
 		}
   	}

@@ -95,9 +95,10 @@ a
 
 .onglets:hover
 {
-    color: black;
+    color: rgba(100, 200, 100, 1);
     /*font-size:200px;*/
 }
+
 
 .selected
 {
