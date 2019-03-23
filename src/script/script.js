@@ -77,6 +77,37 @@ function scrolled() {
     $('#bouttonsOngletsAccrochés').css({'display':'none'})
   }
 
+  if(currentScroll>document.getElementById("descriptif").offsetTop && currentScroll<document.getElementById("production").offsetTop)
+  {
+  	//$('html').css({'background-color':'blue'});
+  	document.getElementById("propos2").className ="onglets selected";
+  	document.getElementById("prod2").className ="onglets";
+
+  }
+  else
+  {
+  	document.getElementById("propos2").className ="onglets";
+  	if(currentScroll>document.getElementById("production").offsetTop && currentScroll<document.getElementById("recette").offsetTop)
+  	{
+  		document.getElementById("prod2").className ="onglets selected";
+  		document.getElementById("recette2").className ="onglets";
+
+  	}
+  	else
+  	{
+  		document.getElementById("prod2").className ="onglets";
+		if(currentScroll>document.getElementById("recette").offsetTop && currentScroll<windowHeight)
+		{
+  			document.getElementById("recette2").className ="onglets selected";
+		}
+
+		else
+		{
+  			document.getElementById("recette2").className ="onglets";
+  			document.getElementById("contact2").className ="onglets selected";
+		}
+  	}
+  }
 };
 
 function scrollToReference(ref) {
