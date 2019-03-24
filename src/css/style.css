@@ -51,17 +51,20 @@ header
 
 #haut
 {
-    /*width:100%;*/
-    height:300px;
+    /*
+    height:100%;
 
+    */
+    width:35%;
 }
 
 
 a
 {
     text-decoration:none;
-    text-color: black;
+    color: black;
 }
+
 #bouttonsOnglets
 {
     text-align: center;
@@ -88,7 +91,7 @@ a
     padding-top: 1%;
     padding-bottom: 1%;
     color:rgba(0, 100, 0, 0.7);
-    font-size: 20px;
+    font-size: 120%;
     margin-left: 0;
     margin-right: 0;
 }
@@ -109,7 +112,7 @@ a
 .titres
 {
 
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     text-align: center;
     padding: 3%;
     color: rgba(46,139,87,1);
@@ -255,7 +258,6 @@ display:none;
 .liDefilant{
     display:none;
     width:70%;
-    height: 300px; /*CHANGER LE PX!!*/
     padding: 2%;
     background-color: white;
 }
@@ -264,11 +266,19 @@ display:none;
 .defiler
 {
     opacity:1;
-    height: 300px;
+    width:50%;
     line-height: 300px;
     float:left;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+}
+
+.petit
+{
+    display: block;
+    float:none;
+    width:100%;
 
 }
 
