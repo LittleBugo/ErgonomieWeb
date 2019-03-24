@@ -79,7 +79,7 @@ $(function(){
 
 
 function scrolled() {
-
+    console.log(document.body.clientWidth)
   var windowHeight = document.body.clientHeight,
   currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
@@ -141,16 +141,34 @@ function scrolled() {
   }
 
 
-
+    /*Regardez on gère ici le responsive, avec du java script*/
     if(document.body.clientWidth < 600)
     {
         $(".defiler").css({'float':'none', 'display':'block', 'width':'100%'});
+        //$("html").css({'background-image':'linear-gradient(rgb(255,255,255), rgb(255, 242, 113))'});
+        $("html").css({'background-size':'300%'});
+        $('#bouttonsOnglets div').css({'width':'100%'})
+
+
     }
     else
     {
-        $(".defiler").css({'float':'left', 'display':'inline-block', 'width':'50%'});
 
+        $(".defiler").css({'float':'left', 'display':'inline-block', 'width':'50%'});
+        //$("html").css({'background-image':'url(\'../img/back3.jpg\')'});
+        $('#bouttonsOnglets div').css({'width':''});
+
+        if(document.body.clientWidth < 1250)
+        {
+            $("html").css({'background-size':'200%'});
+        }
+        else
+        {
+            $("html").css({'background-size':'100%'});
+        }
     }
+
+
 
 
 };
