@@ -58,6 +58,21 @@ header
     width:35%;
 }
 
+#vitre
+{
+    position: absolute;
+    width:8%;
+    right:12%;
+    bottom:-3%;
+}
+
+#bvnferme
+{
+    position: absolute;
+    width:8%;
+    right:2%;
+    bottom: -3%;
+}
 
 a
 {
@@ -200,7 +215,7 @@ text-align: center;
 .apropos p
 {
     text-align: justify;
-    width:97%;
+    width:95%;
     padding:1%;
 }
 
@@ -358,5 +373,6 @@ footer {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align:center;
 
 }
