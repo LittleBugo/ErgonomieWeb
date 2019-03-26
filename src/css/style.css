@@ -8,9 +8,15 @@ html
     background-attachment:fixed;
 }
 
+@font-face {
+	font-family: "Police";
+	src: url('Rounded_Elegance.ttf');
+}
+
 body{
     margin : 0;
     padding:0;
+    font-family: "Police";
 }
 
 
@@ -259,6 +265,7 @@ display:none;
 {
     width:5%;
     display:inline-block;
+    position: absolute;
 }
 
 .ulDefilant{
@@ -272,6 +279,8 @@ display:none;
 
 .liDefilant{
     display:none;
+
+    height:100%;
     width:70%;
     padding: 2%;
     background-color: white;
@@ -282,11 +291,14 @@ display:none;
 {
     opacity:1;
     width:50%;
-    line-height: 300px;
+    /*line-height: 300px;*/
     float:left;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+}
 
+.texteDefilant {
+    vertical-align:center;
 }
 
 .petit
