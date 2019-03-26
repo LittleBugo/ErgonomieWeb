@@ -4,7 +4,7 @@ html
     /*background-image:linear-gradient(rgb(255,255,255), rgb(255, 242, 113));*/
     background-image: url("../img/back3.jpg");
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 100%;
     background-attachment:fixed;
 }
 
@@ -411,6 +411,14 @@ footer span{
 }
 
 
+@media only screen and (max-width: 1000px){
+
+    html
+    {
+        background-size:150%;
+    }
+
+}
 
  @media only screen and (max-width: 800px) {
 
