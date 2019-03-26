@@ -34,12 +34,7 @@ header
     top: 10px;
 }
 
-#bretagne
-{
-    height : 10%;
-    width : 10%;
-    float: left;
-}
+
 
 #fb_logo {
     width : 5%;
@@ -51,22 +46,32 @@ header
     width:35%;
     position: relative;
     left: -5%;
+
+}
+
+.logo
+{
+    position: absolute;
+    width : 8%;
+    bottom:0;
+
+}
+#bretagne
+{
+    position: absolute;
+    left:5%;
 }
 
 #vitre
 {
-    position: absolute;
-    width:8%;
+
     right:12%;
-    bottom:-3%;
 }
 
 #bvnferme
 {
-    position: absolute;
-    width:8%;
     right:2%;
-    bottom: -3%;
+
 }
 
 a

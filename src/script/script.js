@@ -100,22 +100,15 @@ function scrolled() {
   	document.getElementById("prod2").className ="onglets";
     document.getElementById("recettes2").className ="onglets";
     document.getElementById("contact2").className ="onglets";
-
-
-
   }
   else
   {
-
-
   	if(currentScroll>document.getElementById("production").offsetTop && currentScroll<document.getElementById("recette").offsetTop)
   	{
         document.getElementById("propos2").className ="onglets";
   		document.getElementById("prod2").className ="onglets selected";
   		document.getElementById("recettes2").className ="onglets";
         document.getElementById("contact2").className ="onglets";
-
-
     }
   	else
   	{
@@ -125,7 +118,6 @@ function scrolled() {
             document.getElementById("prod2").className ="onglets";
             document.getElementById("recettes2").className ="onglets selected";
   			document.getElementById("contact2").className ="onglets";
-
   			//alert(window.innerHeight + " "  + currentScroll  + " et " + document.getElementById("fb").offsetTop);
 		}
 	//console.log("currentScroll " + currentScroll + " taille window "  + windowHeight + "le tout" )
@@ -134,15 +126,14 @@ function scrolled() {
 
   if(currentScroll+window.innerHeight>=windowHeight)
   	{
-          document.getElementById("propos2").className ="onglets";
-          document.getElementById("prod2").className ="onglets";
+  	    document.getElementById("propos2").className ="onglets";
+  	    document.getElementById("prod2").className ="onglets";
   		document.getElementById("recettes2").className ="onglets";
-    		document.getElementById("contact2").className ="onglets selected";
-
+  		document.getElementById("contact2").className ="onglets selected";
   		}
 
 
-
+    $('.logo').css({'bottom':currentScroll/4});
 
 
 
