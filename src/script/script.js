@@ -61,13 +61,26 @@ $(function(){
 	{
 		//$(".contenuRecette").css({'display':'inline-block'});
         alert("ci git : la recette");
-	})
+	});
 
 
 
 
-    /*Responsive*/
+/*FOOTER*/
 
+    $('#bouttonPertenairePLUS').click(function()
+    {
+       $('#partenaires').css({'display':'block'});
+       $('#partenairesButton').css({'display':'none'});
+
+    });
+
+    $('#bouttonPertenaireMOINS').click(function()
+    {
+        $('#partenairesButton').css({'display':'block'});
+        $('#partenaires').css({'display':'none'});
+
+    });
 
 });
 
