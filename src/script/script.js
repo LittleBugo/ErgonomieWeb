@@ -13,7 +13,7 @@ $(function(){
 
   //Ajouter des Alinéas sur les paragraphes.
   $('p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
-
+  $('#important ul li').after(', ');
   //Gérer le boutons en savoir plus de la partie "à propos de nous".
   $('.ensavoirplus').click(function()
   {
@@ -133,11 +133,11 @@ function scrolled() {
   		}
 
 
-    $('.logo').css({'bottom':currentScroll/4});
+  $('.logo').css({'bottom':currentScroll/4});
 
 
 
-};
+}
 
 function scrollToReference(ref) {
   var element = document.getElementById(ref);
