@@ -22,18 +22,8 @@ body{
 
 header
 {
-    /*width:100%;
-    height:20%;*/
-    /*background-color: aqua;*/
-
-    
     margin: 0;
 }
-
-
-
-
-
 
 
 #banniere
@@ -42,26 +32,25 @@ header
     text-align: center;
     position:relative;
     top: 10px;
-    /*width:100%;
-    background-color: aqua;*/
+}
+
+#bretagne
+{
+    height : 10%;
+    width : 10%;
+    float: left;
 }
 
 #fb_logo {
     width : 5%;
     height: 5%;
-    /*-webkit-filter: drop-shadow(-5px 5px 5px black);
-     filter: drop-shadow(-5px -2px 5px black);
-     margin-left:0px;
-     margin-top: 0px;*/
 }
 
 #haut
 {
-    /*
-    height:100%;
-
-    */
     width:35%;
+    position: relative;
+    left: -5%;
 }
 
 #vitre
@@ -120,7 +109,6 @@ a
 .onglets:hover
 {
     color: rgba(100, 200, 100, 1);
-    /*font-size:200px;*/
 }
 
 
@@ -188,17 +176,16 @@ a
 
 #aproposblocks1
 {
-    width: 40%;
+    width: 48%;
     background-color: #ffffdd;
     margin-right:0%;
     padding:1%;
-    height:100%;
-
+    float:left;
 }
 
 #aproposblocks2
 {
-    width: 40%;
+    width: 48%;
     background-color: #ffffff;
     padding:1%;
     margin-bottom:1%;
@@ -232,18 +219,15 @@ text-align: center;
     margin:1%;
 }
 
+#more{
+    width: 100%;
+}
+
 
 #blabla
 {
 display:none;
 }
-
-
-
-
-
-
-
 
 
 
@@ -254,7 +238,6 @@ display:none;
 #Diapo {
     margin: 0;
     width: 100%;
-    /*overflow: hidden;*/
     height: 100%;
     text-align:center;
 
@@ -290,7 +273,6 @@ display:none;
 {
     opacity:1;
     width:50%;
-    /*line-height: 300px;*/
     float:left;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -317,6 +299,7 @@ display:none;
 
 .liDefilant div h2
 {
+
 }
 
 
