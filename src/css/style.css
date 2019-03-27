@@ -89,10 +89,10 @@ a
 #bouttonsOnglets
 {
     text-align: center;
-    background: white;
+    background: #fff;
     position: initial;
-    border-bottom : solid 2px black;
-    border-top : solid 2px black;
+    border-top : solid 2px rgba(0, 100, 0, 0.7);
+    border-bottom : solid 2px rgba(0, 100, 0, 0.7);
 }
 
 #bouttonsOngletsAccrochés
@@ -103,8 +103,7 @@ a
     background-color : rgba(255, 255, 255, 1);
     display: none;
     text-align: center;
-    border-bottom : solid 2px black;
-    border-top : solid 2px black;
+    border-bottom : solid 2px rgba(0, 100, 0, 0.7);
 
 }
 .onglets
@@ -258,8 +257,7 @@ text-align: center;
 [class^="ensav"]
 {
     color : rgba(0, 100, 0, 0.7);
-    background-color: #fff;
-    margin:1%;
+    width: 10%;
 }
 
 #more{
@@ -290,7 +288,7 @@ display:none;
 
 .fleche
 {
-    width:5%;
+    width:7%;
     display:inline-block;
 
 }
@@ -352,16 +350,6 @@ display:none;
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Le css pour les recettes*/
 
 .titreRecette
@@ -383,16 +371,16 @@ display:none;
     color: rgba(0, 100, 0, 0.7);
 }
 
+.titreRecette img
+{
+    width:50%;
+}
 
 .contenuRecette
 {
     display:none;
     text-align: justify;
 }
-
-
-
-
 
 
 
@@ -533,7 +521,7 @@ html
 #partenaires img
 {
     width:20%;
-    margin : 1%;
+
 }
 
 
