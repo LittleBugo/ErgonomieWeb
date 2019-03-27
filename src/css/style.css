@@ -66,6 +66,7 @@ img
 {
     position: absolute;
     left:5%;
+	transform : rotate(-50deg);
 }
 
 #vitre
