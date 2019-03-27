@@ -109,7 +109,8 @@ function scrolled() {
   if(currentScroll<document.getElementById("production").offsetTop)
   {
   	//$('html').css({'background-color':'blue'});
-  	document.getElementById("propos2").className ="onglets selected";
+      document.getElementById("Accueil2").className ="onglets";
+      document.getElementById("propos2").className ="onglets selected";
   	document.getElementById("prod2").className ="onglets";
     document.getElementById("recettes2").className ="onglets";
     document.getElementById("contact2").className ="onglets";
@@ -118,6 +119,7 @@ function scrolled() {
   {
   	if(currentScroll>document.getElementById("production").offsetTop && currentScroll<document.getElementById("recette").offsetTop)
   	{
+        document.getElementById("Accueil2").className ="onglets";
         document.getElementById("propos2").className ="onglets";
   		document.getElementById("prod2").className ="onglets selected";
   		document.getElementById("recettes2").className ="onglets";
@@ -127,6 +129,7 @@ function scrolled() {
   	{
 		if(currentScroll>document.getElementById("recette").offsetTop)
 		{
+            document.getElementById("Accueil2").className ="onglets";
             document.getElementById("propos2").className ="onglets";
             document.getElementById("prod2").className ="onglets";
             document.getElementById("recettes2").className ="onglets selected";
