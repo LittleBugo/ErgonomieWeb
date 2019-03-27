@@ -137,13 +137,31 @@ function scrolled() {
   	}
   }
 
-  if(currentScroll+window.innerHeight>=windowHeight)
-  	{
-  	    document.getElementById("propos2").className ="onglets";
-  	    document.getElementById("prod2").className ="onglets";
-  		document.getElementById("recettes2").className ="onglets";
-  		document.getElementById("contact2").className ="onglets selected";
-  		}
+
+
+  if(currentScroll>document.getElementById("foot").offsetTop)
+  {
+      document.getElementById("bouttonsOngletsAccrochés").className = "bouttonsMenu sombre";
+      document.getElementById("Accueil2").className ="onglets onglS";
+      document.getElementById("contact2").className ="onglets onglS selectedSombre";
+      document.getElementById("propos2").className ="onglets onglS";
+      document.getElementById("prod2").className ="onglets onglS";
+      document.getElementById("recettes2").className ="onglets onglS";
+
+
+  }
+  else
+  {
+      document.getElementById("bouttonsOngletsAccrochés").className = "bouttonsMenu";
+      document.getElementById("contact2").className ="onglets";
+      if(currentScroll+window.innerHeight>=windowHeight)
+      {
+          document.getElementById("propos2").className ="onglets";
+          document.getElementById("prod2").className ="onglets";
+          document.getElementById("recettes2").className ="onglets";
+          document.getElementById("contact2").className ="onglets selected";
+      }
+  }
 
 
   $('.logo').css({'bottom':currentScroll/4});

@@ -96,7 +96,7 @@ a
     border-bottom : solid 2px rgba(0, 100, 0, 0.7);
 }
 
-#bouttonsOngletsAccrochés
+.bouttonsMenu
 {
     position: fixed;
     top : 0;
@@ -107,6 +107,13 @@ a
     border-bottom : solid 2px rgba(0, 100, 0, 0.7);
 
 }
+
+.sombre
+{
+    border-bottom : solid 2px rgb(40, 78, 174);
+}
+
+
 .onglets
 {
     display:inline-block;
@@ -121,15 +128,30 @@ a
     margin-right: 0;
 }
 
+.onglS
+{
+    color:#2f5ccc;
+}
+
 .onglets:hover
 {
     color: rgba(100, 200, 100, 1);
 }
 
+.onglS:hover
+{
+    color: #3496ff;
+}
 
 .selected
 {
     background-color: rgba(0, 100, 0, 0.7);
+    color:rgba(255, 255, 255, 1);
+}
+
+.selectedSombre
+{
+    background-color: #284eae;
     color:rgba(255, 255, 255, 1);
 }
 
