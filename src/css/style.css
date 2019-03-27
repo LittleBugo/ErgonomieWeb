@@ -49,7 +49,7 @@ img
 
 #haut
 {
-    width:35%;
+    width:25%;
     position:relative;
 
 
@@ -91,6 +91,8 @@ a
     text-align: center;
     background: white;
     position: initial;
+    border-bottom : solid 2px black;
+    border-top : solid 2px black;
 }
 
 #bouttonsOngletsAccrochés
@@ -101,6 +103,8 @@ a
     background-color : rgba(255, 255, 255, 1);
     display: none;
     text-align: center;
+    border-bottom : solid 2px black;
+    border-top : solid 2px black;
 
 }
 .onglets
